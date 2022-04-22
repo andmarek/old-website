@@ -19,7 +19,7 @@
 		<div class="container flex justify-between items-center mx-auto px-8 md:px-14 lg:px-24 w-full">
 			<div class="text-lg font-bold">and(rew) marek</div>
 			<div class="hidden md:flex space-x-12 items-center">
-				<a href="#" class="text-selected-text">home</a>
+				<a href="#" class="hover:text-pink-400 text-selected-text">home</a>
 				<a class="hover:text-pink-400" href="#work">about me</a>
 				<a class="hover:text-pink-400" href="#clients">experience</a>
 				<a class="hover:text-pink-400" href="#clients">misc</a>
@@ -90,7 +90,7 @@
 				possible. I used to be an avid runner in high school, but have since broadened my fitness horizons quite
 				a bit. Besides running, you can usually find me rollerblading, climbing, lifting, or hiking. I'm also
 				somewhat of a history junkie and particularly like learning about linguistics and Spanish. </p>
-
+			<!-- 
 			<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-6">
 				<img src="https://images.unsplash.com/photo-1576153192396-180ecef2a715?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1374&q=80"
 					class="w-full bg-nav h-36 lg:h-72 object-cover">
@@ -111,6 +111,7 @@
 				<img src="https://images.unsplash.com/photo-1545235617-7a424c1a60cc?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=880&q=80"
 					class="w-full hidden md:block md:col-span-2 lg:col-span-1 bg-nav h-36 lg:h-72 object-cover">
 			</div>
+			-->
 		</section>
 	</div>
 
@@ -122,59 +123,69 @@
 				During the day, I develop software at Principal Financial Group. I mainly do backend development in the
 				Cloud, but I have had experience with creating cloud infrastructure to facilitate data analysis as well.
 			</p>
-			<p class="section-paragraph"> I graduated from Iowa State University with a degree in software engineering
-				in 2021. At Iowa State, I was a teaching assistant for a C programming course, and instructed a
-				project-based programming course as part of my duties as a software engineering peer mentor. I loved
-				getting the chance to expose new programmers to technology that they wouldn't have heard about in their
-				classes, and teaching them to think like a programmer.</p>
 
 			<!-- Clients -->
+
+			<div
+				class="w-full border border-nav p-16 lg:px-32 lg:py-20 lg:space-x-32 flex justify-center lg:justify-start flex-wrap lg:flex-nowrap">
+				<!-- Client info -->
+				<div class="flex flex-wrap justify-center text-center lg:text-left lg:block">
+					<h3 class="text-white text-3xl font-semibold">Principal Financial Group</h3>
+
+					<div class="w-full lg:w-auto flex flex-wrap justify-center lg:justify-start gap-3 mt-6 mb-8">
+						<div class="badge">Software Engineer</div>
+						<div class="badge">Software Engineer Intern</div>
+						<div class="badge">Cloud Development</div>
+					</div>
+					<h4> Software Engineer</h4>
+					<ul class="list-disc tracking-wide leading-loose">
+						<li> Architected and developed a disaster recovery plan for a web application using AWS
+							CloudFront and Route53.</li>
+						<li> Refactored and delivered backend infrastructural solutions using the AWS CDK in TypeScript.
+						</li>
+
+						<!-- ... -->
+					</ul>
+				</div>
+
+			</div>
 			<div class="space-y-12 my-16">
 				<div
 					class="w-full border border-nav p-16 lg:px-32 lg:py-20 lg:space-x-32 flex justify-center lg:justify-start flex-wrap lg:flex-nowrap">
 
 					<!-- Client info -->
 					<div class="flex flex-wrap justify-center text-center lg:text-left lg:block">
-						<h3 class="text-white text-3xl font-semibold">Principal Financial Group</h3>
-
+						<h3 class="text-white text-3xl font-semibold">Principal Global Investors</h3>
 						<div class="w-full lg:w-auto flex flex-wrap justify-center lg:justify-start gap-3 mt-6 mb-8">
-							<div class="badge">Software Engineer</div>
+							<div class="hover:bg-sky-700 badge">Software Engineer</div>
 							<div class="badge">Cloud Development</div>
 						</div>
+						<h4> Software Engineer</h4>
+						<h4> May 2021 - Feb 2022 </h4>
+
 						<ul class="list-disc tracking-wide leading-loose">
-							<li> Contributed to the development of various cloud-based pieces of infrastructure to
-								facilitate the development of machine learning models across the organization.</li>
-							<li> Implemented unit tests and refactored code for a data reservoir in AWS using the AWS
-								CDK in Python.</li>
-							<li> Architected and developed a chatbot using the AWS CDK in Python to facilitate the
-								employee onboarding experience. </li>
-							<li> Participated in a week-long hackathon to develop the backend for a portal to connect
-								non-profit organizations to donors. </li>
+							<li> Wrote and maintained several projects leveraging the AWS CDK in Python. </li>
+							<li> Migrated a Postgres database to AWS Aurora utilizing AWS CDK as part of an effort to
+								move an application into the cloud.</li>
+							<li> Contributed to a framework for automating ML model production in AWS SageMaker Studio.
+							</li>
+							<li> Architected an ETL process to enable portfolio managers to easily manage asset
+								allocations. </li>
 							<!-- ... -->
 						</ul>
-					</div>
-
-				</div>
-				<div
-					class="w-full border border-nav p-16 lg:px-32 lg:py-20 lg:space-x-32 flex justify-center lg:justify-start flex-wrap lg:flex-nowrap">
-					<!-- Client info -->
-					<div class="flex flex-wrap justify-center text-center lg:text-left lg:block">
-						<h3 class="text-white text-3xl font-semibold">Principal Global Investors</h3>
-
-						<div class="w-full lg:w-auto flex flex-wrap justify-center lg:justify-start gap-3 mt-6 mb-8">
-							<div class="badge">Software Engineer</div>
-							<div class="badge">Software Engineer Intern</div>
-							<div class="badge">Cloud Development</div>
+						<div class="w-full justify-center lg:justify-start gap-3 mt-6 ">
+							<h4> Software Engineer Intern </h4>
 						</div>
+
+						<h4> May 2020 - May 2021 </h4>
 						<ul class="list-disc tracking-wide leading-loose">
-							<li> Contributed to the development of various cloud-based pieces of infrastructure to
-								facilitate the development of machine learning models across the organization.</li>
-							<li> Implemented unit tests and refactored code for a data reservoir in AWS using the AWS
-								CDK in Python.</li>
-							<li> Architected and developed a chatbot using the AWS CDK in Python to facilitate the
-								employee onboarding experience. </li>
-							<li> Participated in a week-long hackathon to develop the backend for a portal to connect
-								non-profit organizations to donors. </li>
+							<li> Wrote and maintained several projects leveraging the AWS CDK in Python. </li>
+							<li> Migrated a Postgres database to AWS Aurora utilizing AWS CDK as part of an effort to
+								move an application into the cloud.</li>
+							<li> Contributed to a framework for automating ML model production in AWS SageMaker Studio.
+							</li>
+							<li> Architected an ETL process to enable portfolio managers to easily manage asset
+								allocations. </li>
 							<!-- ... -->
 						</ul>
 					</div>
@@ -209,11 +220,9 @@
 		</section>
 	</div>
 
-
-	<!-- Hire me -->
 	<div class="container mt-64 flex justify-between items-center mx-auto px-8 md:px-14 lg:px-24 w-full">
 		<section class="w-full">
-			<h2 id="hire" class="secondary-title">Hire me</h2>
+			<h2 id="hire" class="secondary-title">Contact Me</h2>
 			<p class="section-paragraph">Feel free to to contact me any time, through any method below.</p>
 
 			<div class="w-full grid lg:grid-cols-2 gap-8 lg:gap-32 mt-24">
