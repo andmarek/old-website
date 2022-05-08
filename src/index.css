@@ -24,17 +24,20 @@ html, body {
     @apply text-3xl font-bold;
 }
 
-.secondary-title::before {
-    content: "";
-    @apply block w-12 h-2 bg-theme rounded-full mb-1;
-}
+@layer utilities {
+    .secondary-title::before {
+        content: "";
+        @apply block w-12 h-2 bg-theme rounded-full mb-1;
+    }
 
-.section-paragraph {
-    @apply text-secondary my-6 w-full max-w-3xl;
-}
+    .section-paragraph {
+        @apply text-secondary my-6 w-full max-w-3xl;
+    }
 
-.badge {
-    @apply px-4 py-2 text-sm rounded bg-badge;
+    .badge {
+        @apply px-4 py-2 text-sm rounded bg-badge;
+    }
+
 }
 
 [id] {
@@ -53,8 +56,10 @@ scroll-margin-top: 100px;
     transition: background 200ms, border-color 200ms;
 }
 
-.selected-circle {
-    @apply border-theme bg-theme;
+@layer utilities {
+    .selected-circle {
+        @apply border-theme bg-theme;
+    }
 }
 
 .nav-dot:hover span {
