@@ -19,10 +19,10 @@
 		<div class="container flex justify-between items-center mx-auto px-8 md:px-14 lg:px-24 w-full">
 			<div class="text-lg font-bold">and(rew) marek</div>
 			<div class="hidden md:flex space-x-12 items-center">
-				<a href="#" class="transition duration-500 hover:text-pink-400 text-selected-text">home</a>
-				<a class="transition duration-500 hover:text-pink-400" href="#about-me">about</a>
-				<a class="transition duration-500 hover:text-pink-400" href="#experience">experience</a>
-				<a class="transition duration-500 hover:text-pink-400" href="#contact">contact</a>
+				<a href="#" class="transition duration-500 hover:text-theme text-selected-text">home</a>
+				<a class="transition duration-500 hover:text-theme" href="#about-me">about</a>
+				<a class="transition duration-500 hover:text-theme" href="#experience">experience</a>
+				<a class="transition duration-500 hover:text-theme" href="#contact">contact</a>
 			</div>
 			<div class="md:hidden">
 				<svg class="fill-white" width="26" height="18" viewBox="0 0 26 18" fill="none"
@@ -41,7 +41,15 @@
 
 			<nav class="inline-block lg:mr-24 lg:w-4 fixed left-percentage hidden xl:block">
 				<div class="absolute left-50 transform -translate-x-1/2 space-y-6 mt-36">
-					<a href="#" class="nav-dot selected-circle block w-7 h-7 rounded-full border-4 border-nav bg-body">
+					<!--
+					<a href="#" class="px-2 w-7 h-7">
+						<svg xmlns="http://www.w3.org/2000/svg" id="Outline" class="fill-white" viewBox="0 0 24 24" width="28" height="28"><path d="M23.121,9.069,15.536,1.483a5.008,5.008,0,0,0-7.072,0L.879,9.069A2.978,2.978,0,0,0,0,11.19v9.817a3,3,0,0,0,3,3H21a3,3,0,0,0,3-3V11.19A2.978,2.978,0,0,0,23.121,9.069ZM15,22.007H9V18.073a3,3,0,0,1,6,0Zm7-1a1,1,0,0,1-1,1H17V18.073a5,5,0,0,0-10,0v3.934H3a1,1,0,0,1-1-1V11.19a1.008,1.008,0,0,1,.293-.707L9.878,2.9a3.008,3.008,0,0,1,4.244,0l7.585,7.586A1.008,1.008,0,0,1,22,11.19Z"/></svg>
+					</a>
+					<a class="px-2 w-7 h-7">
+						<svg xmlns="http://www.w3.org/2000/svg" id="Outline" class="fill-white" viewBox="0 0 24 24" width="28" height="28"><path d="M12,12A6,6,0,1,0,6,6,6.006,6.006,0,0,0,12,12ZM12,2A4,4,0,1,1,8,6,4,4,0,0,1,12,2Z"/><path d="M12,14a9.01,9.01,0,0,0-9,9,1,1,0,0,0,2,0,7,7,0,0,1,14,0,1,1,0,0,0,2,0A9.01,9.01,0,0,0,12,14Z"/></svg>
+					</a>
+					-->
+					<a href="#home" class="nav-dot block w-7 h-7 rounded-full border-4 border-nav bg-body">
 						<span class="bg-black px-2 py-1 rounded-md ml-10 opacity-0">home</span>
 					</a>
 					<a href="#about-me" class="nav-dot block w-7 h-7 rounded-full border-4 border-nav bg-body">
@@ -67,48 +75,26 @@
 	<!-- about me -->
 	<div class="container mt-96 flex justify-between mx-auto px-8 md:px-14 lg:px-24 w-full">
 		<section class="w-full">
-			<h2 id="about-me" class="secondary-title">about me</h2>
+			<h1 id="about-me" class="secondary-title">about me</h2>
 			<p class="text-xl text-secondary w-full my-6"> I'm a software engineer from Chicago who loves solving problems and
 				teaching
 				others to do the same.</p>
 			<p class="text-xl text-secondary w-full my-6"> I studied Software Engineering at Iowa State University from 2017 - 2021.</p>
 			<p class="text-xl text-secondary w-full my-6"> Outside of programming you can find me running, rollerblading, climbing, lifting, or hiking. </p>
-			<p class="text-xl text-secondary w-full my-6"> I can type over 140 words per minute. <a class="transition duration-500 ease-in hover:text-pink-400 badge" href="typeracer.com"> Challenge me on TypeRacer! </a> </p>
-			<!-- 
-			<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-6">
-				<img src="https://images.unsplash.com/photo-1576153192396-180ecef2a715?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1374&q=80"
-					class="w-full bg-nav h-36 lg:h-72 object-cover">
-				<img src="https://images.unsplash.com/photo-1545235617-9465d2a55698?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80"
-					class="w-full bg-nav h-36 lg:h-72 object-cover">
-				<img src="https://images.unsplash.com/photo-1586717791821-3f44a563fa4c?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1470&q=80"
-					class="w-full hidden md:block bg-nav h-36 lg:h-72 object-cover">
-				<img src="https://images.unsplash.com/photo-1558655146-d09347e92766?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=764&q=80"
-					class="w-full hidden md:block bg-nav h-36 lg:h-72 object-cover">
-				<img src="https://images.unsplash.com/photo-1547119957-637f8679db1e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=764&q=80"
-					class="w-full hidden md:block bg-nav h-36 lg:h-72 object-cover">
-				<img src="https://images.unsplash.com/photo-1559028012-481c04fa702d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1336&q=80"
-					class="w-full hidden md:block bg-nav h-36 lg:h-72 object-cover">
-				<img src="https://images.unsplash.com/photo-1603969072881-b0fc7f3d77d7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80s"
-					class="w-full hidden md:block bg-nav h-36 lg:h-72 object-cover">
-				<img src="https://images.unsplash.com/photo-1618761714954-0b8cd0026356?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
-					class="w-full hidden md:block bg-nav h-36 lg:h-72 object-cover">
-				<img src="https://images.unsplash.com/photo-1545235617-7a424c1a60cc?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=880&q=80"
-					class="w-full hidden md:block md:col-span-2 lg:col-span-1 bg-nav h-36 lg:h-72 object-cover">
-			</div>
-			-->
+			<p class="text-xl text-secondary w-full my-6"> I can type over 140 words per minute. <a class="transition duration-500 ease-in hover:text-theme badge" href="typeracer.com"> Challenge me on TypeRacer! </a> </p>
 		</section>
 	</div>
 
 	<!-- experience -->
 	<div class="container mt-64 flex justify-between items-center mx-auto px-8 md:px-14 lg:px-24 w-full">
 		<section class="w-full">
-			<h2 id="experience" class="secondary-title">experience</h2>
+			<h1 id="experience" class="secondary-title">experience</h2>
 			<p class="mt-6 mb-6 text-xl text-secondary w-full my-">
 				During the day, I develop software at Principal Financial Group. I mainly do backend development in the
 				Cloud, but I have had experience with creating cloud infrastructure to facilitate data analysis as well.
 			</p>
 			<div
-				class="transition ease-in duration-300 hover:border-white w-full border border-nav p-16 lg:px-32 lg:py-20 lg:space-x-32 flex justify-center lg:justify-start flex-wrap lg:flex-nowrap">
+				class="transition ease-in duration-300 hover:border-white w-full border border-theme p-16 lg:px-32 lg:py-20 lg:space-x-32 flex justify-center lg:justify-start flex-wrap lg:flex-nowrap">
 				<!-- Client info -->
 				<div class="flex flex-wrap justify-center text-center lg:text-left lg:block">
 						<h3 class="text-white text-3xl font-semibold">Principal Financial Group</h3>
@@ -135,7 +121,7 @@
 			</div>
 			<div class="space-y-12 my-16">
 				<div
-					class="transition ease-in duration-300 hover:border-white w-full border border-nav p-16 lg:px-32 lg:py-20 lg:space-x-32 flex justify-center lg:justify-start flex-wrap lg:flex-nowrap">
+					class="transition ease-in duration-300 hover:border-white w-full border border-theme p-16 lg:px-32 lg:py-20 lg:space-x-32 flex justify-center lg:justify-start flex-wrap lg:flex-nowrap">
 
 					<!-- Client info -->
 					<div class="flex flex-wrap justify-center text-center lg:text-left lg:block">
@@ -185,7 +171,7 @@
 
 				</div>
 				<div
-					class="transition ease-in duration-300 hover:border-white w-full border border-nav p-16 lg:px-32 lg:py-20 lg:space-x-32 flex justify-center lg:justify-start flex-wrap lg:flex-nowrap">
+					class="transition ease-in duration-300 hover:border-white w-full border border-theme p-16 lg:px-32 lg:py-20 lg:space-x-32 flex justify-center lg:justify-start flex-wrap lg:flex-nowrap">
 					<!-- Client info -->
 					<div class="flex flex-wrap justify-center text-center lg:text-left lg:block">
 						<h3 class="text-white text-3xl font-semibold">Iowa State University</h3>
@@ -219,7 +205,7 @@
 
 	<div class="container mt-64 flex justify-between items-center mx-auto px-8 md:px-14 lg:px-24 w-full">
 		<section class="w-full">
-			<h2 id="contact" class="secondary-title">Contact</h2>
+			<h1 id="contact" class="secondary-title">Contact</h2>
 			<p class="section-paragraph">Feel free to to contact me any time, through any method below.</p>
 				<h1 class="text-2xl"> Email: andwmarek@gmail.com</h1>
 				<h1 class="text-2xl"> Twitter: @andrewmarek</h1>

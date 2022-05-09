@@ -13,9 +13,10 @@ document.addEventListener("DOMContentLoaded", function(){
 });
 
 function updateList() {
-	const titles = [...document.querySelectorAll('h1, h2')].sort((a, b) => {
+	const titles = [...document.querySelectorAll('h1')].sort((a, b) => {
 		return Math.abs(a.getBoundingClientRect().top) - Math.abs(b.getBoundingClientRect().top);
 	});
+    console.log(titles);
 
 	document.querySelectorAll(".selected-circle").forEach(c => c.classList.remove("selected-circle"));
 	
