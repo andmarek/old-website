@@ -3,9 +3,9 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        'body': '#28282B',
-        'selected-text': '#746C70',
-        'theme': '#647C90',
+        'body': '#17171F',
+        'selected-text': '#A3A3FF',
+        'theme': '#3F3FFF',
         'nav': '#404053',
         'secondary': '#9191A4',
         'badge': '#3F3F51',
