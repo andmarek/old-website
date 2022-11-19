@@ -11,18 +11,15 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
 	<script data-main="scripts/app" src="scripts/require.js"></script>
-
-
 </head>
 
 <body class="bg-body text-white font-poppins pb-12">
-
 	<!-- Nav -->
 	<header class="py-6">
 		<div class="container flex justify-between items-center mx-auto px-8 md:px-14 lg:px-24 w-full">
-			<div class="text-lg font-bold">and(rew) marek</div>
+			<div class="text-lg text-primary">and(rew) marek</div>
 			<div class="hidden md:flex space-x-12 items-center">
-				<a href="#" class="transition duration-500 hover:text-theme text-selected-text">home</a>
+				<a href="#" class="transition duration-500 hover:text-theme">home</a>
 				<a class="transition duration-500 hover:text-theme" href="#about-me">about</a>
 				<a class="transition duration-500 hover:text-theme" href="#experience">experience</a>
 				<a class="transition duration-500 hover:text-theme" href="#contact">contact</a>
@@ -40,63 +37,39 @@
 
 	<div class="container mt-16 flex justify-between items-center mx-auto px-8 md:px-14 lg:px-24 w-full">
 		<div class="flex flex-wrap md:flex-nowrap">
-			<!-- side bar-->
-			<nav class="inline-block lg:mr-24 lg:w-4 fixed left-percentage hidden xl:block">
-				<div class="absolute left-50 transform -translate-x-1/2 space-y-6 mt-36">
-					<!--
-					<a href="#" class="px-2 w-7 h-7">
-						<svg xmlns="http://www.w3.org/2000/svg" id="Outline" class="fill-white" viewBox="0 0 24 24" width="28" height="28"><path d="M23.121,9.069,15.536,1.483a5.008,5.008,0,0,0-7.072,0L.879,9.069A2.978,2.978,0,0,0,0,11.19v9.817a3,3,0,0,0,3,3H21a3,3,0,0,0,3-3V11.19A2.978,2.978,0,0,0,23.121,9.069ZM15,22.007H9V18.073a3,3,0,0,1,6,0Zm7-1a1,1,0,0,1-1,1H17V18.073a5,5,0,0,0-10,0v3.934H3a1,1,0,0,1-1-1V11.19a1.008,1.008,0,0,1,.293-.707L9.878,2.9a3.008,3.008,0,0,1,4.244,0l7.585,7.586A1.008,1.008,0,0,1,22,11.19Z"/></svg>
-					</a>
-					<a class="px-2 w-7 h-7">
-						<svg xmlns="http://www.w3.org/2000/svg" id="Outline" class="fill-white" viewBox="0 0 24 24" width="28" height="28"><path d="M12,12A6,6,0,1,0,6,6,6.006,6.006,0,0,0,12,12ZM12,2A4,4,0,1,1,8,6,4,4,0,0,1,12,2Z"/><path d="M12,14a9.01,9.01,0,0,0-9,9,1,1,0,0,0,2,0,7,7,0,0,1,14,0,1,1,0,0,0,2,0A9.01,9.01,0,0,0,12,14Z"/></svg>
-					</a>
-					-->
-					<a href="#home" class="nav-dot block w-7 h-7 rounded-full border-4 border-nav bg-body">
-						<span class="bg-black px-2 py-1 rounded-md ml-10 opacity-0">home</span>
-					</a>
-					<a href="#about-me" class="nav-dot block w-7 h-7 rounded-full border-4 border-nav bg-body">
-						<span class="bg-black px-2 py-1 rounded-md ml-10 opacity-0">about</span>
-					</a>
-					<a href="#experience" class="nav-dot block w-7 h-7 rounded-full border-4 border-nav bg-body">
-						<span class="bg-black px-2 py-1 rounded-md ml-10 opacity-0">experience</span>
-					</a>
-					<a href="#contact" class="nav-dot block w-7 h-7 rounded-full border-4 border-nav bg-body">
-						<span class="bg-black px-2 py-1 rounded-md ml-10 opacity-0">contact</span>
-					</a>
-				</div>
-			</nav>
 
 			<!-- Picture & Name -->
 			<div class="flex flex-wrap lg:ml-20 justify-center md:justify-start max-w-xl mt-0 md:my-36">
-				<h1 class="font-bold text-5xl md:text-6xl lg:text-7xl text-center md:text-left transform duration-500 transition-all "
-					data-replace='{ "translate-y-12": "translate-y-0", "opacity-0": "opacity-100" }'>Andrew Marek<br>
-					Cloud
-					Engineer</h1>
+				<h1 class="text-primary text-5xl md:text-6xl lg:text-7xl text-center md:text-left transform duration-500 transition-all "
+					data-replace='{ "translate-y-12": "translate-y-0", "opacity-0": "opacity-100" }'>Andrew Marek
+				</h1>
+				<h1 class="text-5xl lg:text-7xl md:text-left"> Cloud Engineer</h1>
 			</div>
-			<img src="img/nash-edited-4.png" alt="Man" class="rounded-md mt-12 md:absolute -mt-6 md:mt-0 -z-1">
+			<img src="img/selfie_lol_cropped.png" alt="Man" class="object-scale-down rounded-2xl md:mt-0 w-1/2 -z-1">
 		</div>
 	</div>
 
 	<!-- about me -->
-	<div class="container mt-96 flex justify-between mx-auto px-8 md:px-14 lg:px-24 w-full">
+	<div class="container flex justify-between mx-auto px-8 md:px-14 lg:px-24 w-full">
 		<section class="w-full">
-			<h1 id="about-me" class="secondary-title">about me</h2>
-				<p class="text-xl text-secondary w-full" > I'm a software engineer from Chicago who loves solving
-					problems and
-					teaching
-					others to do the same.</p>
-				<p class="text-xl text-secondary w-full my-6"> I studied Software Engineering at Iowa State University
-					from 2017 - 2021.</p>
-				<p class="text-xl text-secondary w-full my-6"> Outside of programming you can find me running,
-					rollerblading, climbing, lifting, or hiking. </p>
-				<p class="text-xl text-secondary w-full my-6"> I can type over 140 words per minute. </p>
+			<h1 id="about-me" class="text-3xl text-primary">about me</h2>
+				<p class="text-xl text-secondary w-full my-6"> I'm a software engineer at Change Healthcare currently living in the Des Moines area.
+					I'm originally from Chicago, but moved to Iowa to attend Iowa State University where I finished my bachelors degree in Software Engineering in 2021.
+				</p>
+				<p class="text-xl text-secondary w-full my-6">
+					My current areas of expertise is backend cloud development.  Although I've only been working with AWS services since 2020, 
+					I've had the opportunity to contribute to a lot of really cool and interesting projects leveraging AWS's cloud services.  
+				</p>	
+				<p class="text-xl text-secondary w-full my-6"> Outside of programming, I like to be really active.  I'm an avid runner, but also like to rollerblade, 
+					lift weights, rock climb, and hike.
+				</p>
 		</section>
 	</div>
 
 	<!-- experience -->
 	<div class="container mt-20 flex justify-between items-center mx-auto px-8 md:px-14 lg:px-24 w-full">
 		<section class="w-full">
-			<h1 id="experience" class="secondary-title">experience</h2>
+			<h1 id="experience" class="secondary-text text-3xl text-primary">experience</h2>
 				<p class="mt-6 mb-6 text-xl text-secondary w-full my-6">
 					During the day, I develop software at Change Healthcare, a healthcare technology company focused on
 					transforming the U.S. healthcare system through next-generation data tooling.
@@ -108,13 +81,13 @@
 
 				<div class="space-y-12 my-16">
 					<div
-						class="transition ease-in duration-300 hover:border-white w-full border border-theme p-16 lg:px-32 lg:py-20 lg:space-x-32 flex justify-center lg:justify-start flex-wrap lg:flex-nowrap">
+						class="group transition ease-in duration-300 hover:border-primary w-full border border-primary-dim p-16 lg:px-32 lg:py-20 lg:space-x-32 flex justify-center lg:justify-start flex-wrap lg:flex-nowrap">
 						<!-- Client info -->
 						<div class="flex flex-wrap justify-center text-center lg:text-left lg:block">
-							<h3 class="text-white text-3xl font-semibold">Change Healthcare</h3>
-							<div class="flex flex-wrap gap-4">
-								<h3 class="text-white text-2xl font-semibold">Software Engineer II</h3>
-								<h3 class="text-secondary text-2xl">Sept 2022 - Present</h3>
+							<h3 class="text-primary-dim ease-in transition duration-300 group-hover:text-primary text-3xl">Change Healthcare</h3>
+							<div class="group flex flex-wrap gap-4">
+								<h3 class="text-tertiary-dim group-hover:text-tertiary-bright ease-in transition duration-300 text-2xl">Software Engineer II</h3>
+								<h3 class="text-tertiary-dim text-2xl group-hover:text-tertiary-bright ease-in transition duration-300">Sept 2022 - Present</h3>
 							</div>
 
 							<div
@@ -134,13 +107,13 @@
 						</div>
 					</div>
 					<div
-						class="transition ease-in duration-300 hover:border-white w-full border border-theme p-16 lg:px-32 lg:py-20 lg:space-x-32 flex justify-center lg:justify-start flex-wrap lg:flex-nowrap">
+						class="group transition ease-in duration-300 hover:border-primary w-full border border-primary-dim lg:px-32 lg:py-20 lg:space-x-32 p-16 flex justify-center lg:justify-start flex-wrap lg:flex-nowrap">
 						<!-- Client info -->
 						<div class="flex flex-wrap justify-center text-center lg:text-left lg:block">
-							<h3 class="text-white text-3xl font-semibold">Principal Financial Group</h3>
-							<div class="flex flex-wrap gap-4">
-								<h3 class="text-white text-2xl font-semibold">Software Engineer II</h3>
-								<h3 class="text-secondary text-2xl">Feb 2021 - Sept 2022</h3>
+							<h3 class="text-primary-dim ease-in transition duration-300 group-hover:text-primary text-3xl">Principal Financial Group</h3>
+							<div class="group flex flex-wrap gap-4">
+								<h3 class="text-tertiary-dim group-hover:text-tertiary-bright ease-in transition duration-300 text-2xl">Software Engineer II</h3>
+								<h3 class="text-tertiary-dim group-hover:text-tertiary-bright ease-in transition duration-300 text-2xl">Feb 2021 - Sept 2022</h3>
 							</div>
 
 							<div
@@ -165,15 +138,13 @@
 						</div>
 					</div>
 					<div
-						class="transition ease-in duration-300 hover:border-white w-full border border-theme p-16 lg:px-32 lg:py-20 lg:space-x-32 flex justify-center lg:justify-start flex-wrap lg:flex-nowrap">
-
-
+						class="group transition ease-in duration-300 hover:border-primary w-full border border-primary-dim p-16 lg:px-32 lg:py-20 lg:space-x-32 flex justify-center lg:justify-start flex-wrap lg:flex-nowrap">
 						<!-- Client info -->
-						<div class="flex flex-wrap justify-center text-center lg:text-left lg:block">
-							<h3 class="text-white text-3xl font-semibold">Principal Global Investors</h3>
+						<div class="ease-in transition duration-300 flex flex-wrap justify-center text-center lg:text-left lg:block">
+							<h3 class="text-primary-dim ease-in transition duration-300 group-hover:text-primary text-3xl">Principal Global Investors</h3>
 
 							<div class="flex flex-wrap gap-4">
-								<h3 class="text-white text-2xl font-semibold">Software Engineer I</h3>
+								<h3 class="text-tertiary-dim group-hover:text-tertiary-bright ease-in transition duration-300 text-2xl">Software Engineer I</h3>
 								<h3 class="text-secondary text-2xl">Feb 2021 - May 2021 </h3>
 							</div>
 
@@ -220,12 +191,12 @@
 
 					</div>
 					<div
-						class="transition ease-in duration-300 hover:border-white w-full border border-theme p-16 lg:px-32 lg:py-20 lg:space-x-32 flex justify-center lg:justify-start flex-wrap lg:flex-nowrap">
+						class="group transition ease-in duration-300 hover:border-primary w-full border border-primary-dim p-16 lg:px-32 lg:py-20 lg:space-x-32 flex justify-center lg:justify-start flex-wrap lg:flex-nowrap">
 						<!-- Client info -->
 						<div class="flex flex-wrap justify-center text-center lg:text-left lg:block">
-							<h3 class="text-white text-3xl font-semibold">Iowa State University</h3>
+							<h3 class="transition ease-in duration-300 group-hover:text-primary text-3xl text-primary-dim">Iowa State University</h3>
 							<div class="flex flex-wrap gap-4">
-								<h3 class="text-white text-2xl font-semibold">Teaching Assitant & Peer Mentor</h3>
+								<h3 class="transition ease-in duration-300 text-tertiary-dim group-hover:text-tertiary-bright text-2xl">Teaching Assitant & Peer Mentor</h3>
 								<h3 class="text-secondary text-2xl">Feb 2021 - May 2021 </h3>
 							</div>
 							<div
@@ -259,26 +230,16 @@
 
 	<div class="container mt-20 flex justify-between items-center mx-auto px-8 md:px-14 lg:px-24 w-full">
 		<section class="w-full">
-			<h1 id="contact" class="secondary-title">Contact</h2>
+			<h1 id="contact" class="secondary-title text-primary">Contact</h2>
 				<p class="section-paragraph">Feel free to to contact me any time, through any method below.</p>
-				<h1 class="text-2xl"> Email: andwmarek@gmail.com</h1>
-				<h1 class="text-2xl"> Twitter: @andrewmarek</h1>
-				<h1 class="text-2xl"> Instagram: @andmarek</h1>
-				<h1 class="text-2xl"> LinkedIn: https://www.linkedin.com/in/andmarek/ </h1>
-				<div class="mt-12">
-					<!-- Socials -->
-					<div class="flex mt-20 space-x-6">
-						<!-- Twitter -->
-						<a href="https://twitter.com/AndrewMarek">
-							<svg class="w-8 h-8 lg:w-12 lg:h-12" width="42" height="42" viewBox="0 0 42 42" fill="none"
-								xmlns="http://www.w3.org/2000/svg">
-								<path
-									d="M21 0C9.40313 0 0 9.40313 0 21C0 32.5969 9.40313 42 21 42C32.5969 42 42 32.5969 42 21C42 9.40313 32.5969 0 21 0ZM31.0922 15.8297C31.1062 16.05 31.1062 16.2797 31.1062 16.5047C31.1062 23.3859 25.8656 31.3125 16.2891 31.3125C13.3359 31.3125 10.5984 30.4547 8.29219 28.9781C8.71406 29.025 9.11719 29.0437 9.54844 29.0437C11.9859 29.0437 14.2266 28.2188 16.0125 26.8219C13.725 26.775 11.8031 25.275 11.1469 23.2125C11.9484 23.3297 12.6703 23.3297 13.4953 23.1188C12.3175 22.8795 11.2588 22.2398 10.4991 21.3084C9.73949 20.377 9.32572 19.2113 9.32812 18.0094V17.9437C10.0172 18.3328 10.8281 18.5719 11.6766 18.6047C10.9633 18.1293 10.3784 17.4854 9.97365 16.7298C9.5689 15.9743 9.35683 15.1306 9.35625 14.2734C9.35625 13.3031 9.60938 12.4172 10.0641 11.6484C11.3714 13.2578 13.0028 14.5741 14.8522 15.5117C16.7016 16.4493 18.7275 16.9873 20.7984 17.0906C20.0625 13.5516 22.7063 10.6875 25.8844 10.6875C27.3844 10.6875 28.7344 11.3156 29.6859 12.3281C30.8625 12.1078 31.9875 11.6672 32.9906 11.0766C32.6016 12.2812 31.7859 13.2984 30.7031 13.9406C31.7531 13.8281 32.7656 13.5375 33.7031 13.1297C32.9953 14.1703 32.1094 15.0938 31.0922 15.8297Z"
-									fill="white" />
-							</svg>
-						</a>
-					</div>
-				</div>
+				<ul class="inline-block"> 
+					<li> <h1 class="text-2xl text-secondary inline">Email:</h1> <h1 class="text-2xl text-tertiary-bright inline"> andwmarek@gmail.com</h1> </li>
+					<l1> <h1 class="text-2xl inline text-secondary"> Twitter: </h1> <h1 class="text-2xl text-tertiary-bright inline">@andrewmarek</h1> </l1>
+					<br>
+					<l1> <h1 class="text-2xl inline text-secondary"> Instagram: </h1> <h1 class="inline text-2xl text-tertiary-bright">@andmarek</h1> </l1>
+					<br>
+					<l1> <h1 class="text-2xl inline text-secondary"> LinkedIn: </h1> <h1 class="inline text-2xl text-tertiary-bright">https://www.linkedin.com/in/andmarek/</h1> </l1>
+				</ul>
 
 	</div>
 

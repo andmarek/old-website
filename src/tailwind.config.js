@@ -3,17 +3,21 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        'body': '#17171F',
-        'selected-text': '#A3A3FF',
-        'theme': '#3F3FFF',
+        'body': '#282828',
+        'selected-text': '#fe8019',
+        'theme': '#689d6a',
         'nav': '#404053',
-        'secondary': '#9191A4',
+        'primary-dim': '#b16286', // purple
+        'primary': '#d3869b', // purple
+        'secondary': '#458588', //blu-ish
+        'tertiary-bright': '#fabd2f', // yellow orangeish
+        'tertiary-dim': '#d79921', // yellow orangish
         'badge': '#3F3F51',
         'input-border': '#565666',
         'input': '#2A2A35',
       },
       fontFamily: {
-        'poppins': ["'Poppins'", 'sans-serif']
+        sans: ["Menlo", "sans-serif"]
       }
     },
   },
