@@ -13,7 +13,7 @@
 	<script data-main="scripts/app" src="scripts/require.js"></script>
 </head>
 
-<body class="bg-body text-white font-poppins pb-12">
+<body class="bg-body text-gruvbox-gray-dim font-poppins pb-12">
 	<!-- Nav -->
 	<header class="py-6">
 		<div class="container flex justify-between items-center mx-auto px-8 md:px-14 lg:px-24 w-full">
@@ -22,52 +22,55 @@
 				<a href="#" class="transition duration-500 hover:text-theme">home</a>
 				<a class="transition duration-500 hover:text-theme" href="#about-me">about</a>
 				<a class="transition duration-500 hover:text-theme" href="#experience">experience</a>
-				<a class="transition duration-500 hover:text-theme" href="#contact">contact</a>
+				<a class="transition duration-500 hover:text-theme" href="#links">links</a>
 			</div>
 			<div class="md:hidden">
-				<svg class="fill-white" width="26" height="18" viewBox="0 0 26 18" fill="none"
-					xmlns="http://www.w3.org/2000/svg">
-					<path
-						d="M13 17.5H0.25V14.6667H13V17.5ZM25.75 10.4167H0.25V7.58333H25.75V10.4167ZM25.75 3.33333H13V0.5H25.75V3.33333Z"
-						fill="white" />
-				</svg>
+				<a href="#" class="transition duration-500 hover:text-theme">home</a>
+				<a class="transition duration-500 hover:text-theme" href="#about-me">about</a>
+				<a class="transition duration-500 hover:text-theme" href="#experience">experience</a>
+				<a class="transition duration-500 hover:text-theme" href="#contact">contact</a>
 			</div>
 		</div>
 	</header>
 
-	<div class="container mt-16 flex justify-between items-center mx-auto px-8 md:px-14 lg:px-24 w-full">
+	<div class="container flex justify-between items-center mx-auto md:px-14 lg:px-24 w-full">
 		<div class="flex flex-wrap md:flex-nowrap">
-
 			<!-- Picture & Name -->
-			<div class="flex flex-wrap lg:ml-20 justify-center md:justify-start max-w-xl mt-0 md:my-36">
+			<div class="flex justify flex-wrap lg:ml-20 justify-center md:justify-start max-w-xl mt-0 md:my-36">
 				<h1 class="text-primary text-5xl md:text-6xl lg:text-7xl text-center md:text-left transform duration-500 transition-all "
 					data-replace='{ "translate-y-12": "translate-y-0", "opacity-0": "opacity-100" }'>Andrew Marek
 				</h1>
-				<h1 class="text-5xl lg:text-7xl md:text-left"> Cloud Engineer</h1>
+				<h1 class="text-center text-5xl lg:text-7xl md:text-left"> Cloud Engineer</h1>
 			</div>
-			<img src="img/selfie_lol_cropped.png" alt="Man" class="object-scale-down rounded-2xl md:mt-0 w-1/2 -z-1">
+			<img src="img/selfie_lol_cropped.png" alt="Man"
+				class="md:justify-start grow items-center object-scale-down rounded-2xl md:mt-0 w-1/2 -z-1">
 		</div>
 	</div>
 
 	<!-- about me -->
 	<div class="container flex justify-between mx-auto px-8 md:px-14 lg:px-24 w-full">
 		<section class="w-full">
-			<h1 id="about-me" class="text-3xl text-primary">about me</h2>
-				<p class="text-xl text-secondary w-full my-6"> I'm a software engineer at Change Healthcare currently living in the Des Moines area.
-					I'm originally from Chicago, but moved to Iowa to attend Iowa State University where I finished my bachelors degree in Software Engineering in 2021.
+			<h1 id="about-me" class="pt-4 text-3xl text-primary">about me</h2>
+				<p class="text-xl text-secondary w-full my-6"> I'm a software engineer at Change Healthcare currently
+					living in the Des Moines area.
+					I'm originally from Chicago, but moved to Iowa to attend Iowa State University where I finished my
+					bachelors degree in Software Engineering in 2021.
 				</p>
 				<p class="text-xl text-secondary w-full my-6">
-					My current areas of expertise is backend cloud development.  Although I've only been working with AWS services since 2020, 
-					I've had the opportunity to contribute to a lot of really cool and interesting projects leveraging AWS's cloud services.  
-				</p>	
-				<p class="text-xl text-secondary w-full my-6"> Outside of programming, I like to be really active.  I'm an avid runner, but also like to rollerblade, 
+					My current areas of expertise is backend cloud development. Although I've only been working with AWS
+					services since 2020,
+					I've had the opportunity to contribute to a lot of really cool and interesting projects leveraging
+					AWS's cloud services.
+				</p>
+				<p class="text-xl text-secondary w-full my-6"> Outside of programming, I like to be really active. I'm
+					an avid runner, but also like to rollerblade,
 					lift weights, rock climb, and hike.
 				</p>
 		</section>
 	</div>
 
 	<!-- experience -->
-	<div class="container mt-20 flex justify-between items-center mx-auto px-8 md:px-14 lg:px-24 w-full">
+	<div class="container mt-20 flex justify-between items-center sm:text-sm mx-auto px-8 md:px-14 lg:px-24 w-full">
 		<section class="w-full">
 			<h1 id="experience" class="secondary-text text-3xl text-primary">experience</h2>
 				<p class="mt-6 mb-6 text-xl text-secondary w-full my-6">
@@ -84,23 +87,30 @@
 						class="group transition ease-in duration-300 hover:border-primary w-full border border-primary-dim p-16 lg:px-32 lg:py-20 lg:space-x-32 flex justify-center lg:justify-start flex-wrap lg:flex-nowrap">
 						<!-- Client info -->
 						<div class="flex flex-wrap justify-center text-center lg:text-left lg:block">
-							<h3 class="text-primary-dim ease-in transition duration-300 group-hover:text-primary text-3xl">Change Healthcare</h3>
+							<h3
+								class="text-primary-dim ease-in transition duration-300 group-hover:text-primary text-3xl">
+								Change Healthcare</h3>
 							<div class="group flex flex-wrap gap-4">
-								<h3 class="text-tertiary-dim group-hover:text-tertiary-bright ease-in transition duration-300 text-2xl">Software Engineer II</h3>
-								<h3 class="text-tertiary-dim text-2xl group-hover:text-tertiary-bright ease-in transition duration-300">Sept 2022 - Present</h3>
+								<h3
+									class="text-tertiary-dim group-hover:text-tertiary-bright ease-in transition duration-300 text-2xl">
+									Software Engineer II</h3>
+								<h3
+									class="text-secondary-dim text-2xl ease-in transition duration-300 group-hover:text-secondary">
+									Sept 2022 - Present</h3>
 							</div>
 
 							<div
 								class="w-full lg:w-auto flex flex-wrap justify-center lg:justify-start gap-3 mt-6 mb-8">
-								<div class="transition duration-500 ease-in hover:bg-selected-text badge ">Cloud
+								<div class="transition duration-500 ease-in hover:bg-badge-selected badge ">Cloud
 									Development
 								</div>
-								<div class="transition duration-500 ease-in hover:bg-selected-text badge">Terraform
+								<div class="transition duration-500 ease-in hover:bg-badge-selected badge">Terraform
 								</div>
-								<div class="transition duration-500 ease-in hover:bg-selected-text badge">Python</div>
-								<div class="transition duration-500 ease-in hover:bg-selected-text badge">Docker</div>
+								<div class="transition duration-500 ease-in hover:bg-badge-selected badge">Python</div>
+								<div class="transition duration-500 ease-in hover:bg-badge-selected badge">Docker</div>
 							</div>
-							<ul class="list-disc tracking-wide leading-loose">
+							<ul
+								class="text-gruvbox-gray-dim duration-300 transition ease-in group-hover:text-gruvbox-gray list-disc tracking-wide leading-loose">
 								<li> Currently working on a team that deploys and scales high traffic APIs in AWS. </li>
 							</ul>
 
@@ -110,28 +120,38 @@
 						class="group transition ease-in duration-300 hover:border-primary w-full border border-primary-dim lg:px-32 lg:py-20 lg:space-x-32 p-16 flex justify-center lg:justify-start flex-wrap lg:flex-nowrap">
 						<!-- Client info -->
 						<div class="flex flex-wrap justify-center text-center lg:text-left lg:block">
-							<h3 class="text-primary-dim ease-in transition duration-300 group-hover:text-primary text-3xl">Principal Financial Group</h3>
+							<h3
+								class="text-primary-dim ease-in transition duration-300 group-hover:text-primary text-3xl">
+								Principal Financial Group</h3>
 							<div class="group flex flex-wrap gap-4">
-								<h3 class="text-tertiary-dim group-hover:text-tertiary-bright ease-in transition duration-300 text-2xl">Software Engineer II</h3>
-								<h3 class="text-tertiary-dim group-hover:text-tertiary-bright ease-in transition duration-300 text-2xl">Feb 2021 - Sept 2022</h3>
+								<h3
+									class="text-tertiary-dim group-hover:text-tertiary-bright ease-in transition duration-300 text-2xl">
+									Software Engineer II</h3>
+								<h3
+									class="text-secondary-dim group-hover:text-secondary ease-in transition duration-300 text-2xl">
+									Feb 2021 - Sept 2022</h3>
 							</div>
 
 							<div
 								class="w-full lg:w-auto flex flex-wrap justify-center lg:justify-start gap-3 mt-6 mb-8">
-								<div class="transition duration-500 ease-in hover:bg-selected-text badge ">Cloud
+								<div class="transition duration-500 ease-in hover:bg-badge-selected badge ">Cloud
 									Development
 								</div>
-								<div class="transition duration-500 ease-in hover:bg-selected-text badge">TypeScript
+								<div class="transition duration-500 ease-in hover:bg-badge-selected badge">TypeScript
 								</div>
-								<div class="transition duration-500 ease-in hover:bg-selected-text badge">Python</div>
-								<div class="transition duration-500 ease-in hover:bg-selected-text badge">AWS CDK</div>
-								<div class="transition duration-500 ease-in hover:bg-selected-text badge">ReactJs</div>
+								<div class="transition duration-500 ease-in hover:bg-badge-selected badge">Python</div>
+								<div class="transition duration-500 ease-in hover:bg-badge-selected badge">AWS CDK</div>
+								<div class="transition duration-500 ease-in hover:bg-badge-selected badge">ReactJs</div>
 							</div>
-							<ul class="list-disc tracking-wide leading-loose">
+							<ul
+								class="text-gruvbox-gray-dim duration-300 transition ease-in group-hover:text-gruvbox-gray list-disc tracking-wide leading-loose">
 								<li> Architected and developed a disaster recovery plan for a web application using AWS
 									CloudFront and Route53.</li>
 								<li> Refactored and delivered backend infrastructural solutions using the AWS CDK in
 									TypeScript.
+								</li>
+								<li>
+									Improved the performance of an API by 20% through implementing caching and multi-processing for internal API calls.
 								</li>
 							</ul>
 
@@ -140,51 +160,70 @@
 					<div
 						class="group transition ease-in duration-300 hover:border-primary w-full border border-primary-dim p-16 lg:px-32 lg:py-20 lg:space-x-32 flex justify-center lg:justify-start flex-wrap lg:flex-nowrap">
 						<!-- Client info -->
-						<div class="ease-in transition duration-300 flex flex-wrap justify-center text-center lg:text-left lg:block">
-							<h3 class="text-primary-dim ease-in transition duration-300 group-hover:text-primary text-3xl">Principal Global Investors</h3>
+						<div
+							class="ease-in transition duration-300 flex flex-wrap justify-center text-center lg:text-left lg:block">
+							<h3
+								class="text-primary-dim ease-in transition duration-300 group-hover:text-primary text-3xl">
+								Principal Global Investors</h3>
 
 							<div class="flex flex-wrap gap-4">
-								<h3 class="text-tertiary-dim group-hover:text-tertiary-bright ease-in transition duration-300 text-2xl">Software Engineer I</h3>
-								<h3 class="text-secondary text-2xl">Feb 2021 - May 2021 </h3>
+								<h3
+									class="text-tertiary-dim group-hover:text-tertiary-bright ease-in transition duration-300 text-2xl">
+									Software Engineer I</h3>
+								<h3
+									class="text-secondary-dim duration-300 transition ease-in group-hover:text-secondary text-2xl">
+									Feb 2021 - May 2021 </h3>
 							</div>
 
 
 							<div
 								class="w-full lg:w-auto flex flex-wrap justify-center lg:justify-start gap-3 mt-6 mb-8">
-								<div class="transition duration-500 ease-in hover:bg-selected-text badge">Software
+								<div class="transition duration-500 ease-in hover:bg-badge-selected badge">Software
 									Engineer</div>
-								<div class="transition duration-500 ease-in hover:bg-selected-text badge">Cloud
+								<div class="transition duration-500 ease-in hover:bg-badge-selected badge">Cloud
 									Development</div>
-								<div class="transition duration-500 ease-in hover:bg-selected-text badge">AWS SageMaker
+								<div class="transition duration-500 ease-in hover:bg-badge-selected badge">AWS SageMaker
 								</div>
 								<div
-									class="transition duration-500Teaching Assitant & Peer Mentor ease-in hover:bg-selected-text badge">
+									class="transition duration-500Teaching Assitant & Peer Mentor ease-in hover:bg-badge-selected badge">
 									AWS Lambda</div>
-								<div class="transition duration-500 ease-in hover:bg-selected-text badge">Python</div>
+								<div class="transition duration-500 ease-in hover:bg-badge-selected badge">Python</div>
 							</div>
-							<h4> Software Engineer</h4>
-							<h4> May 2021 - Feb 2022 </h4>
+							<h4
+								class="text-tertiary-dim transition duration-500 ease-in group-hover:text-tertiary-bright">
+								Software Engineer</h4>
+							<h4 class="text-theme-dim ease-in transition duration-300 group-hover:text-theme"> May 2021
+								- Feb 2022 </h4>
 
-							<ul class="list-disc tracking-wide leading-loose">
+							<ul
+								class="text-gruvbox-gray-dim ease-in transition duration-300 group-hover:text-gruvbox-gray list-disc tracking-wide leading-loose">
 								<li> Migrated a Postgres database to AWS Aurora utilizing AWS CDK as part of an effort
 									to
 									move an application into the cloud.</li>
 								<li> Contributed to a framework for automating ML model production in AWS SageMaker
 									Studio.
 								</li>
-								<li> Helped maintain an AWS Datalake written in the CDK in order to support various internal data vendors. </li>
+								<li> Helped maintain an AWS Datalake written in the CDK in order to support various
+									internal data vendors. </li>
 								<li> Architected an ETL process to enable portfolio managers to easily manage asset
 									allocations. </li>
 								<!-- ... -->
 							</ul>
 							<div class="w-full justify-center lg:justify-start gap-3 mt-6 ">
-								<h4> Software Engineer Intern </h4>
+								<h4
+									class="text-tertiary-dim transition duration-500 ease-in group-hover:text-tertiary-bright">
+									Software Engineer Intern </h4>
 							</div>
-							<h4> May 2020 - May 2021 </h4>
-							<ul class="list-disc tracking-wide leading-loose">
-								<li> Created an AI chat bot that answered FAQS using Amazon Lex to facillitate employee onboarding. </li>
-								<li> Worked with a full-time team in addtion to intern projects to contribute to an AWS Data Lake. </li>
-								<li> Wrote unit tests for AWS CDK infrastructure as code to meet test coverage requirements for productionalization. </li>
+							<h4 class="text-theme-dim ease-in transition duration-300 group-hover:text-theme"> May 2020
+								- May 2021 </h4>
+							<ul
+								class="text-gruvbox-gray-dim ease-in transition duration-300 group-hover:text-gruvbox-gray list-disc tracking-wide leading-loose">
+								<li> Created an AI chat bot that answered FAQS using Amazon Lex to facillitate employee
+									onboarding. </li>
+								<li> Worked with a full-time team in addtion to intern projects to contribute to an AWS
+									Data Lake. </li>
+								<li> Wrote unit tests for AWS CDK infrastructure as code to meet test coverage
+									requirements for productionalization. </li>
 								<!-- ... -->
 							</ul>
 						</div>
@@ -194,32 +233,40 @@
 						class="group transition ease-in duration-300 hover:border-primary w-full border border-primary-dim p-16 lg:px-32 lg:py-20 lg:space-x-32 flex justify-center lg:justify-start flex-wrap lg:flex-nowrap">
 						<!-- Client info -->
 						<div class="flex flex-wrap justify-center text-center lg:text-left lg:block">
-							<h3 class="transition ease-in duration-300 group-hover:text-primary text-3xl text-primary-dim">Iowa State University</h3>
+							<h3
+								class="transition ease-in duration-300 group-hover:text-primary text-3xl text-primary-dim">
+								Iowa State University</h3>
 							<div class="flex flex-wrap gap-4">
-								<h3 class="transition ease-in duration-300 text-tertiary-dim group-hover:text-tertiary-bright text-2xl">Teaching Assitant & Peer Mentor</h3>
-								<h3 class="text-secondary text-2xl">Feb 2021 - May 2021 </h3>
+								<h3
+									class="transition ease-in duration-300 text-tertiary-dim group-hover:text-tertiary-bright text-2xl">
+									Teaching Assitant & Peer Mentor</h3>
+								<h3
+									class="text-secondary-dim group-hover:text-secondary duration-300 transition ease-in text-2xl">
+									Feb 2021 - May 2021 </h3>
 							</div>
 							<div
 								class="w-full lg:w-auto flex flex-wrap justify-center lg:justify-start gap-3 mt-6 mb-8">
-								<div class="transition duration-500 ease-in hover:bg-selected-text badge">Leadership
+								<div class="transition duration-500 ease-in hover:bg-badge-selected badge">Leadership
 								</div>
-								<div class="transition duration-500 ease-in hover:bg-selected-text badge">Teaching
+								<div class="transition duration-500 ease-in hover:bg-badge-selected badge">Teaching
 									Assistant</div>
-								<div class="transition duration-500 ease-in hover:bg-selected-text badge">Peer Mentor
+								<div class="transition duration-500 ease-in hover:bg-badge-selected badge">Peer Mentor
 								</div>
 							</div>
-							<ul class="list-disc tracking-wide leading-loose"></ul>
-							<li>Instructed a project-based programming course to allow students to gain exposure to a
-								collaborative work environment and learn version control methods.</ul>
-							<li>Served as teaching assistant for a lab-based course in C to facilitate experiential
-								learning.</ul>
-							<li>Mentored over 20 software engineering students within an assigned learning
-								community to garner academic success.</ul>
-							<li>Maintained weekly office hours to provide support in weekly programming assignments.
-								</ul>
-							<li>Lead and orchestrated learning community activities to promote academic services
-								and promote a welcoming community.</ul>
-								</ul>
+							<ul
+								class="text-gruvbox-gray-dim transition duration-300 ease-in group-hover:text-gruvbox-gray list-disc tracking-wide leading-loose">
+								<li>Instructed a project-based programming course to allow students to gain exposure to
+									a
+									collaborative work environment and learn version control methods. </li>
+								<li>Served as teaching assistant for a lab-based course in C to facilitate experiential
+									learning.</li>
+								<li>Mentored over 20 software engineering students within an assigned learning
+									community to garner academic success.</li>
+								<li>Maintained weekly office hours to provide support in weekly programming assignments.
+								</li>
+								<li>Lead and orchestrated learning community activities to promote academic services
+									and promote a welcoming community.</li>
+							</ul>
 						</div>
 
 					</div>
@@ -230,24 +277,33 @@
 
 	<div class="container mt-20 flex justify-between items-center mx-auto px-8 md:px-14 lg:px-24 w-full">
 		<section class="w-full">
-			<h1 id="contact" class="secondary-title text-primary">Contact</h2>
-				<p class="section-paragraph">Feel free to to contact me any time, through any method below.</p>
-				<ul class="inline-block"> 
-					<li> <h1 class="text-2xl text-secondary inline">Email:</h1> <h1 class="text-2xl text-tertiary-bright inline"> andwmarek@gmail.com</h1> </li>
-					<l1> <h1 class="text-2xl inline text-secondary"> Twitter: </h1> <h1 class="text-2xl text-tertiary-bright inline">@andrewmarek</h1> </l1>
+			<h1 id="links" class="text-3xl text-primary">links</h2>
+				<p class="text-theme py-4">Feel free to contact me via the following: </p>
+				<ul class="inline-block">
+					<li>
+						<h1 class="text-2xl text-secondary inline">email -</h1>
+						<h1 class="text-2xl text-tertiary-bright inline"> andwmarek@gmail.com</h1>
+					</li>
+					<l1>
+						<h1 class="text-2xl inline text-secondary"> twitter -</h1>
+						<h1 class="text-2xl text-tertiary-bright inline">@andrewmarek</h1>
+					</l1>
 					<br>
-					<l1> <h1 class="text-2xl inline text-secondary"> Instagram: </h1> <h1 class="inline text-2xl text-tertiary-bright">@andmarek</h1> </l1>
+					<l1>
+						<h1 class="text-2xl inline text-secondary"> instagram -</h1>
+						<h1 class="inline text-2xl text-tertiary-bright">@andmarek</h1>
+					</l1>
 					<br>
-					<l1> <h1 class="text-2xl inline text-secondary"> LinkedIn: </h1> <h1 class="inline text-2xl text-tertiary-bright">https://www.linkedin.com/in/andmarek/</h1> </l1>
+					<l1>
+						<h1 class="text-2xl inline text-secondary"> linkedin -</h1>
+						<h1 class="inline text-2xl text-tertiary-bright"><a
+								href="https://www.linkedin.com/in/andmarek/"> andmarek </a></h1>
+					</l1>
 				</ul>
-
 	</div>
-
 	</section>
 	</div>
-
 	<script src="main.js"></script>
-
 </body>
 
 </html>
