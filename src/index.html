@@ -23,12 +23,14 @@
 				<a class="transition duration-500 hover:text-theme" href="#about-me">about</a>
 				<a class="transition duration-500 hover:text-theme" href="#experience">experience</a>
 				<a class="transition duration-500 hover:text-theme" href="#links">links</a>
+				<a class="transition duration-500 hover:text-theme" href="https://github.com/andmarek">github</a>
 			</div>
 			<div class="md:hidden">
 				<a href="#" class="transition duration-500 hover:text-theme">home</a>
 				<a class="transition duration-500 hover:text-theme" href="#about-me">about</a>
 				<a class="transition duration-500 hover:text-theme" href="#experience">experience</a>
 				<a class="transition duration-500 hover:text-theme" href="#links">links</a>
+				<a class="transition duration-500 hover:text-theme" href="https://github.com/andmarek">github</a>
 			</div>
 		</div>
 	</header>
@@ -48,40 +50,43 @@
 	</div>
 
 	<!-- about me -->
-	<div class="container flex justify-between mx-auto px-8 md:px-14 lg:px-24 w-full">
+	<div class="group container flex justify-between mx-auto px-8 md:px-14 lg:px-24 w-full">
 		<section class="w-full">
-			<h1 id="about-me" class="pt-4 text-3xl text-primary">about me</h2>
-				<p class="text-xl text-secondary w-full my-6"> I'm a software engineer at Change Healthcare currently
+			<h1 id="about-me" class="md:group-hover:text-primary duration-300 ease-in transition pt-4 text-3xl text-primary-dim">about me</h2>
+				<div class="group-hover:text-secondary text-secondary-dim duration-300 ease-in transition"> 
+				<p class="text-xl w-full my-6"> I'm a software engineer at Change Healthcare currently
 					living in the Des Moines area.
 					I'm originally from Chicago, but moved to Iowa to attend Iowa State University where I finished my
 					bachelors degree in Software Engineering in 2021.
 				</p>
-				<p class="text-xl text-secondary w-full my-6">
+				<p class="text-xl w-full my-6">
 					My current area of expertise is backend cloud development. Although I've only been working with AWS
 					services since 2020,
 					I've had the opportunity to contribute to a lot of really cool and interesting projects leveraging
 					AWS's cloud services.
 				</p>
-				<p class="text-xl text-secondary w-full my-6"> Outside of programming, I like to be really active. I'm
+				<p class="text-xl w-full my-6"> Outside of programming, I like to be really active. I'm
 					an avid runner, but also like to rollerblade,
 					lift weights, rock climb, and hike.
 				</p>
+				</div>
 		</section>
 	</div>
 
 	<!-- experience -->
 	<div class="container mt-20 flex justify-between items-center sm:text-sm mx-auto px-8 md:px-14 lg:px-24 w-full">
 		<section class="w-full">
-			<h1 id="experience" class="secondary-text text-3xl text-primary">experience</h2>
-				<p class="mt-6 mb-6 text-xl text-secondary w-full my-6">
+			<div class="group"> 
+			<h1 id="experience" class="transition duration-300 ease-in group-hover:text-primary secondary-text text-3xl text-primary-dim">experience</h2>
+				<p class="mt-6 mb-6 text-xl text-secondary-dim group-hover:text-secondary ease-in duration-300 transition w-full my-6">
 					During the day, I develop software at Change Healthcare, a healthcare technology company focused on
 					transforming the U.S. healthcare system through next-generation data tooling.
 				</p>
-				<p class="mt-6 mb-6 text-xl text-secondary w-full my">
+				<p class="text-secondary-dim group-hover:text-secondary ease-in duration-300 transition mt-6 mb-6 text-xl w-full my">
 					I'm on a data team working on
 					providing extremely performant and reliant APIs in the Cloud.
 				</p>
-
+				</div>
 				<div class="space-y-12 my-16">
 					<div
 						class="group transition ease-in duration-300 hover:border-primary w-full border border-primary-dim p-16 lg:px-32 lg:py-20 lg:space-x-32 flex justify-center lg:justify-start flex-wrap lg:flex-nowrap">
@@ -109,8 +114,8 @@
 								<div class="transition duration-500 ease-in hover:bg-badge-selected badge">Python</div>
 								<div class="transition duration-500 ease-in hover:bg-badge-selected badge">Docker</div>
 							</div>
-							<ul
-								class="text-gruvbox-gray-dim duration-300 transition ease-in group-hover:text-gruvbox-gray list-disc tracking-wide leading-loose">
+							<ul 
+								class="text-gruvbox-gray-dim duration-300 transition ease-in group-hover:text-gruvbox-gray list-disc tracking-wide leading-loose text-left">
 								<li> Currently working on a team that deploys and scales high traffic APIs in AWS. </li>
 							</ul>
 
@@ -144,7 +149,7 @@
 								<div class="transition duration-500 ease-in hover:bg-badge-selected badge">ReactJs</div>
 							</div>
 							<ul
-								class="text-gruvbox-gray-dim duration-300 transition ease-in group-hover:text-gruvbox-gray list-disc tracking-wide leading-loose">
+								class="text-left text-gruvbox-gray-dim duration-300 transition ease-in group-hover:text-gruvbox-gray list-disc tracking-wide leading-loose">
 								<li> Architected and developed a disaster recovery plan for a web application using AWS
 									CloudFront and Route53.</li>
 								<li> Refactored and delivered backend infrastructural solutions using the AWS CDK in
@@ -196,7 +201,7 @@
 								- Feb 2022 </h4>
 
 							<ul
-								class="text-gruvbox-gray-dim ease-in transition duration-300 group-hover:text-gruvbox-gray list-disc tracking-wide leading-loose">
+								class="text-left text-gruvbox-gray-dim ease-in transition duration-300 group-hover:text-gruvbox-gray list-disc tracking-wide leading-loose">
 								<li> Migrated a Postgres database to AWS Aurora utilizing AWS CDK as part of an effort
 									to
 									move an application into the cloud.</li>
@@ -217,7 +222,7 @@
 							<h4 class="text-theme-dim ease-in transition duration-300 group-hover:text-theme"> May 2020
 								- May 2021 </h4>
 							<ul
-								class="text-gruvbox-gray-dim ease-in transition duration-300 group-hover:text-gruvbox-gray list-disc tracking-wide leading-loose">
+								class="text-left text-gruvbox-gray-dim ease-in transition duration-300 group-hover:text-gruvbox-gray list-disc tracking-wide leading-loose">
 								<li> Created an AI chat bot that answered FAQS using Amazon Lex to facillitate employee
 									onboarding. </li>
 								<li> Worked with a full-time team in addtion to intern projects to contribute to an AWS
@@ -254,7 +259,7 @@
 								</div>
 							</div>
 							<ul
-								class="text-gruvbox-gray-dim transition duration-300 ease-in group-hover:text-gruvbox-gray list-disc tracking-wide leading-loose">
+								class="text-left text-gruvbox-gray-dim transition duration-300 ease-in group-hover:text-gruvbox-gray list-disc tracking-wide leading-loose">
 								<li>Instructed a project-based programming course to allow students to gain exposure to
 									a
 									collaborative work environment and learn version control methods. </li>

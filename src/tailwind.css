@@ -2741,6 +2741,11 @@ select {
   border-color: transparent;
 }
 
+.border-primary {
+  --tw-border-opacity: 1;
+  border-color: rgb(211 134 155 / var(--tw-border-opacity));
+}
+
 .bg-body {
   --tw-bg-opacity: 1;
   background-color: rgb(40 40 40 / var(--tw-bg-opacity));
@@ -2899,6 +2904,10 @@ select {
   padding: 4rem;
 }
 
+.p-4 {
+  padding: 1rem;
+}
+
 .py-6 {
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
@@ -2947,6 +2956,16 @@ select {
 .px-1 {
   padding-left: 0.25rem;
   padding-right: 0.25rem;
+}
+
+.py-14 {
+  padding-top: 3.5rem;
+  padding-bottom: 3.5rem;
+}
+
+.py-2 {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
 }
 
 .pb-12 {
@@ -3807,6 +3826,11 @@ html, body {
   color: rgb(142 192 124 / var(--tw-text-opacity));
 }
 
+.group:hover .group-hover\:text-primary-dim {
+  --tw-text-opacity: 1;
+  color: rgb(177 98 134 / var(--tw-text-opacity));
+}
+
 .prose-headings\:underline :is(:where(h1, h2, h3, h4, th):not(:where([class~="not-prose"] *))) {
   -webkit-text-decoration-line: underline;
           text-decoration-line: underline;
@@ -4011,6 +4035,11 @@ html, body {
   .md\:text-6xl {
     font-size: 3.75rem;
     line-height: 1;
+  }
+
+  .group:hover .md\:group-hover\:text-primary {
+    --tw-text-opacity: 1;
+    color: rgb(211 134 155 / var(--tw-text-opacity));
   }
 }
 
